@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+    background-image:url("bg3.jpg");
+    background-repeat: no-repeat;
+    padding-top: 380px;
+}
+h1{
+    color: aliceblue;
+}
+.rules{
+    color:black;
+    
+    text-align: left;
+    font-size: 14px;
+}

@@ -1,116 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissor Game</title>
+    <title>Rock Paper Scissors Game</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>Rock Paper Scissor Game</h1>
-    <button onclick="
-    // const userChoiceMsg = 'You have chose to Bat';
-    let randomNumber = Math.random() * 3;
-    let computerChoice;
-    if(randomNumber > 0 && randomNumber <= 1){
-        computerChoice='Rock';
-        //console.log('Computer choice is to Bat');
-    } else if(randomNumber>1 && randomNumber<=2){
-        computerChoice='Paper';
-        //console.log('Computer choice is to Ball');
-    } else{
-        computerChoice='Scissor';
-        //console.log('Computer choice is to Stump');
-    } 
-    
+</head>
 
-    let resultMsg;
-    if(computerChoice==='Paper'){
-        resultMsg = 'Computer has won';
-    } else if(computerChoice==='Rock'){
-        resultMsg = `It's a tie`;
-    }else if(computerChoice==='Scissor'){
-        resultMsg = 'User won';
-    }
+<body>
+    <h1>Rock Paper Scissors Game</h1>
 
-    alert(`You have chosen Rock. Computer choice is ${computerChoice} and ${resultMsg}`);
-    ">Rock</button>
+    <div class="button-container">
+        <img src="rock.png" alt="Rock" onclick="playGame('Rock')">
+    </div>
 
+    <div class="button-container">
+        <img src="paper.png" alt="Paper" onclick="playGame('Paper')">
+    </div>
 
-    <button onclick="
-    // const userChoiceMsg = 'You have chose to Bat';
-    randomNumber = Math.random()*3;
-    if(randomNumber>0 && randomNumber<=1){
-        computerChoice='Rock';
-        //console.log('Computer choice is to Bat');
-    } else if(randomNumber>1 && randomNumber<=2){
-        computerChoice='Paper';
-        //console.log('Computer choice is to Ball');
-    } else{
-        computerChoice='Scissor';
-        //console.log('Computer choice is to Stump');
-    } 
-    
+    <div class="button-container">
+        <img src="scissor.jpg" alt="Scissors" onclick="playGame('Scissor')">
+    </div>
 
-    if(computerChoice==='Paper'){
-        resultMsg = `It's a tie`;
-    } else if(computerChoice==='Rock'){
-        resultMsg = `User has won`;
-    }else if(computerChoice==='Scissor'){
-        resultMsg = 'Computer has won';
-    }
+    <h2>
+        <div class="result" id="result"></div>
+    </h2>
 
-    alert(`You have chosen Paper. Computer choice is ${computerChoice} and ${resultMsg}`);
-    "
-    >
-      Paper
-    </button>
-    
-    <button
-    onclick="
-    // const userChoiceMsg = 'You have chose to Bat';
-    randomNumber = Math.random()*3;
-    
-    if(randomNumber>0 && randomNumber<=1){
-        computerChoice='Rock';
-        //console.log('Computer choice is to Bat');
-    } else if(randomNumber>1 && randomNumber<=2){
-        computerChoice='Paper';
-        //console.log('Computer choice is to Ball');
-    } else{
-        computerChoice='Scissor';
-        //console.log('Computer choice is to Stump');
-    } 
-    
-
-    if(computerChoice==='Paper'){
-        resultMsg = 'User won';
-    } else if(computerChoice==='Rock'){
-        resultMsg = `Computer has won`;
-    }else if(computerChoice==='Scissor'){
-        resultMsg = `It's a tie`;
-    }
-
-    alert(`You have chosen Scissor. Computer choice is ${computerChoice} and ${resultMsg}`);
-    "
-    >
-      Scissor
-    </button>
-
-    <h2><div class="rules">RULES
+    <div class="rules">RULES
         <br>
         <ul>
-            <li>Select any one option among Rock, Paper and Scissor</li>
-            <li><ol><li>Rock+Paper = You lose</li>
-                <li>Rock+Scissor = You win</li>
-                <li>Rock+Rock = Tie</li>
-                <li>Paper+Rock = You win</li>
-                <li>Paper+Paper = Tie</li>
-                <li>Paper+Scissor = You lose</li>
-                <li>Scissor+Rock = You lose</li>
-                <li>Scissor+Paper = You win</li>
-                <li>Scissor+Scissor = Tie</li></ol></li>
+            <li>Select any one option among Rock, Paper, and Scissor</li>
+            <li>
+                <ol>
+                    <li>Rock + Paper = You lose</li>
+                    <li>Rock + Scissor = You win</li>
+                    <li>Rock + Rock = Tie</li>
+                    <li>Paper + Rock = You win</li>
+                    <li>Paper + Paper = Tie</li>
+                    <li>Paper + Scissor = You lose</li>
+                    <li>Scissor + Rock = You lose</li>
+                    <li>Scissor + Paper = You win</li>
+                    <li>Scissor + Scissor = Tie</li>
+                </ol>
+            </li>
         </ul>
-    </div></h2>
-  </body>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
 </html>

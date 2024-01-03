@@ -1,8 +1,8 @@
 body {
     text-align: center;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
-    padding-top: 380px;
+    background: rgb(131, 126, 229);
+    background: linear-gradient(90deg, rgb(66, 64, 106) 0%, rgb(45, 45, 112) 35%, rgb(3, 72, 86) 100%);
+    padding-top: 30px;
 }
 
 h1 {
@@ -10,8 +10,38 @@ h1 {
 }
 
 .rules {
-    color: black;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 50px;
+}
 
-    text-align: left;
-    font-size: 14px;
+.rules ul,
+.rules ol {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.rules ol {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.button-container {
+    display: inline-block;
+    margin: 10px;
+}
+
+.button-container img {
+    cursor: pointer;
+    width: 100px;
+    height: auto;
+    padding-top: 10px;
+}
+
+.result {
+    color: white; /* Set the font color to white */
+    font-size: 20px;
+    padding-top: 20px;
 }

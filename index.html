@@ -3,67 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cricket Game</title>
+    <title>Rock Paper Scissor Game</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Bat Ball Stump Game</h1>
+    <h1>Rock Paper Scissor Game</h1>
     <button onclick="
     // const userChoiceMsg = 'You have chose to Bat';
     let randomNumber = Math.random() * 3;
     let computerChoice;
     if(randomNumber > 0 && randomNumber <= 1){
-        computerChoice='Bat';
+        computerChoice='Rock';
         //console.log('Computer choice is to Bat');
     } else if(randomNumber>1 && randomNumber<=2){
-        computerChoice='Ball';
+        computerChoice='Paper';
         //console.log('Computer choice is to Ball');
     } else{
-        computerChoice='Stump';
+        computerChoice='Scissor';
         //console.log('Computer choice is to Stump');
     } 
     
 
     let resultMsg;
-    if(computerChoice==='Ball'){
-        resultMsg = 'User won';
-    } else if(computerChoice==='Bat'){
-        resultMsg = `It's a tie`;
-    }else if(computerChoice==='Stump'){
+    if(computerChoice==='Paper'){
         resultMsg = 'Computer has won';
+    } else if(computerChoice==='Rock'){
+        resultMsg = `It's a tie`;
+    }else if(computerChoice==='Scissor'){
+        resultMsg = 'User won';
     }
 
-    alert(`You have chosen to Bat. Computer choice is ${computerChoice} and ${resultMsg}`);
-    ">Bat</button>
+    alert(`You have chosen Rock. Computer choice is ${computerChoice} and ${resultMsg}`);
+    ">Rock</button>
 
 
     <button onclick="
     // const userChoiceMsg = 'You have chose to Bat';
     randomNumber = Math.random()*3;
     if(randomNumber>0 && randomNumber<=1){
-        computerChoice='Bat';
+        computerChoice='Rock';
         //console.log('Computer choice is to Bat');
     } else if(randomNumber>1 && randomNumber<=2){
-        computerChoice='Ball';
+        computerChoice='Paper';
         //console.log('Computer choice is to Ball');
     } else{
-        computerChoice='Stump';
+        computerChoice='Scissor';
         //console.log('Computer choice is to Stump');
     } 
     
 
-    if(computerChoice==='Ball'){
+    if(computerChoice==='Paper'){
         resultMsg = `It's a tie`;
-    } else if(computerChoice==='Bat'){
-        resultMsg = `Computer has won`;
-    }else if(computerChoice==='Stump'){
-        resultMsg = 'User won';
+    } else if(computerChoice==='Rock'){
+        resultMsg = `User has won`;
+    }else if(computerChoice==='Scissor'){
+        resultMsg = 'Computer has won';
     }
 
-    alert(`You have chosen to Ball. Computer choice is ${computerChoice} and ${resultMsg}`);
+    alert(`You have chosen Paper. Computer choice is ${computerChoice} and ${resultMsg}`);
     "
     >
-      Ball
+      Paper
     </button>
     
     <button
@@ -72,44 +72,44 @@
     randomNumber = Math.random()*3;
     
     if(randomNumber>0 && randomNumber<=1){
-        computerChoice='Bat';
+        computerChoice='Rock';
         //console.log('Computer choice is to Bat');
     } else if(randomNumber>1 && randomNumber<=2){
-        computerChoice='Ball';
+        computerChoice='Paper';
         //console.log('Computer choice is to Ball');
     } else{
-        computerChoice='Stump';
+        computerChoice='Scissor';
         //console.log('Computer choice is to Stump');
     } 
     
 
-    if(computerChoice==='Ball'){
-        resultMsg = 'Computer has won';
-    } else if(computerChoice==='Bat'){
-        resultMsg = `User has won`;
-    }else if(computerChoice==='Stump'){
+    if(computerChoice==='Paper'){
+        resultMsg = 'User won';
+    } else if(computerChoice==='Rock'){
+        resultMsg = `Computer has won`;
+    }else if(computerChoice==='Scissor'){
         resultMsg = `It's a tie`;
     }
 
-    alert(`You have chosen to Stump. Computer choice is ${computerChoice} and ${resultMsg}`);
+    alert(`You have chosen Scissor. Computer choice is ${computerChoice} and ${resultMsg}`);
     "
     >
-      Stump
+      Scissor
     </button>
 
     <h2><div class="rules">RULES
         <br>
         <ul>
-            <li>Select any one option among Bat, Ball and Stump</li>
-            <li><ol><li>Bat+Ball = You win</li>
-                <li>Bat+Stump = You lose</li>
-                <li>Bat+Bat = Tie</li>
-                <li>Ball+Bat = You lose</li>
-                <li>Ball+Ball = Tie</li>
-                <li>Ball+Stump = You win</li>
-                <li>Stump+Bat = You win</li>
-                <li>Stump+Ball = You lose</li>
-                <li>Stump+Stump = Tie</li></ol></li>
+            <li>Select any one option among Rock, Paper and Scissor</li>
+            <li><ol><li>Rock+Paper = You lose</li>
+                <li>Rock+Scissor = You win</li>
+                <li>Rock+Rock = Tie</li>
+                <li>Paper+Rock = You win</li>
+                <li>Paper+Paper = Tie</li>
+                <li>Paper+Scissor = You lose</li>
+                <li>Scissor+Rock = You lose</li>
+                <li>Scissor+Paper = You win</li>
+                <li>Scissor+Scissor = Tie</li></ol></li>
         </ul>
     </div></h2>
   </body>
